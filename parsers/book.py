@@ -1,11 +1,17 @@
 from locators.books_locators import BookLocators;
 
 class BookParser:
+    
     def __init__(self, parent):
         self.parent = parent;
 
     def __repr__(self):
-        return f"The book '{self.title}' has {self.rating} stars. The book is {self.price} and is {self.in_stock}.";
+        return {
+            'Title' : {self.title}, 
+            'Rating' : {self.rating}, 
+            'Price' : {self.price}, 
+            'Availability' : {self.in_stock}
+        };
 
     @property
     def title(self):
@@ -14,8 +20,21 @@ class BookParser:
     
     @property
     def rating(self):
+        RATINGS = {
+            'One': 1,
+            'Two': 2,
+            'Three': 3,
+            'Four': 4,
+            'Five': 5
+        }
         locator = BookLocators.RATING;
-        return self.parent.select_one(locator)['class'][-1].lower()
+        rating_string = self.parent.select_one(locator)['class'][-1]
+        if rating_string in RATINGS:
+            number = RATINGS[rating_string];
+            return number
+        else:
+            return None;
+        
     
     @property
     def price(self):
