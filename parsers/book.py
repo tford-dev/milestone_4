@@ -5,17 +5,17 @@ class BookParser:
         self.parent = parent;
 
     def __repr__(self):
-        return f"The book {self.title} has {self.rating} stars. The book is {self.price} and is {self.in_stock}";
+        return f"The book '{self.title}' has {self.rating} stars. The book is {self.price} and is {self.in_stock}.";
 
     @property
     def title(self):
         locator = BookLocators.TITLE;
-        return self.parent.select_one(locator).string
+        return self.parent.select_one(locator)['title']
     
     @property
     def rating(self):
         locator = BookLocators.RATING;
-        return self.parent.select_one(locator).text
+        return self.parent.select_one(locator)['class'][-1].lower()
     
     @property
     def price(self):
@@ -25,4 +25,4 @@ class BookParser:
     @property
     def in_stock(self):
         locator = BookLocators.IN_STOCK;
-        return self.parent.select_one(locator).text
+        return self.parent.select_one(locator).text.strip().lower()
