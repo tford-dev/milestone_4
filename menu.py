@@ -1,11 +1,11 @@
-from app import page_array;
+from app import *;
 
 USER_CHOICE = """
 Enter:
 - 'a' to print all books
 - 'b' to print the best books
 - 'p' to print books based on a desired price
-- 'q' or any other key to quit
+- 'q' or any other key to quit entire process
 Your choice: """
 def print_all_books():
     for book in page_array:
@@ -34,7 +34,7 @@ def print_best_books():
             
 def print_price():
     while True:
-        price = input("What is your desired price for a book???")
+        price = input("What is your desired price for a book??? ")
         if price == 'q':
             break
         try:
@@ -54,6 +54,7 @@ def print_price():
     
 def menu():
     while True:
+        page_prompt();
         user_input = input(USER_CHOICE);
         if user_input.lower() == 'a':
             print_all_books();
