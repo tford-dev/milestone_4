@@ -43,8 +43,9 @@ def print_price():
                 float_price = float(book['Price']);
                 if (float_price <= float(price)):
                     print_price_array.append(book);
+            print_price_array_sorted = sorted(print_price_array, key=lambda x: x['Price'] * -1)[:10];
             if len(print_price_array) > 0:
-                for book in print_price_array:
+                for book in print_price_array_sorted:
                     print(f"{book['Title']} is close to your desired price of £{float(price)}, this book costs £{book['Price']}.");
             else: 
                 print("Please get your bread up.");
