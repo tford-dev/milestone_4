@@ -1,0 +1,50 @@
+2023-09-18 04:50:05,271 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
+2023-09-18 04:50:05,407 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-2.html HTTP/1.1" 200 50877
+2023-09-18 04:50:08,720 DEBUG   :User entered 'a' and called print_all_books().
+2023-09-18 04:50:12,233 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
+2023-09-18 04:50:12,332 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-10.html HTTP/1.1" 200 51145
+2023-09-18 04:50:14,652 DEBUG   :User entered 'b' and called print_best_price().
+2023-09-18 04:50:20,130 DEBUG   :Added data to print_best_books_array. []
+2023-09-18 04:50:20,130 DEBUG   :Results from request for best books have been printed. [{'Title': 'Modern Romance', 'Rating': 5, 'Price': 28.26, 'Availability': 'in stock'}, {'Title': 'Library of Souls (Miss Peregrine’s Peculiar Children #3)', 'Rating': 5, 'Price': 48.56, 'Availability': 'in stock'}, {'Title': 'Frostbite (Vampire Academy #2)', 'Rating': 5, 'Price': 29.99, 'Availability': 'in stock'}, {'Title': 'Finders Keepers (Bill Hodges Trilogy #2)', 'Rating': 5, 'Price': 53.53, 'Availability': 'in stock'}, {'Title': 'Done Rubbed Out (Reightman & Bailey #1)', 'Rating': 5, 'Price': 37.72, 'Availability': 'in stock'}]
+2023-09-18 04:50:22,779 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
+2023-09-18 04:50:22,984 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-10.html HTTP/1.1" 200 51145
+2023-09-18 04:50:27,074 DEBUG   :User entered 'p' and called print_price().
+2023-09-18 04:50:29,608 DEBUG   :Added data to print_price_array. [{'Title': 'Modern Romance', 'Rating': 5, 'Price': 28.26, 'Availability': 'in stock'}, {'Title': 'Miss Peregrine’s Home for Peculiar Children (Miss Peregrine’s Peculiar Children #1)', 'Rating': 1, 'Price': 10.76, 'Availability': 'in stock'}, {'Title': 'Louisa: The Extraordinary Life of Mrs. Adams', 'Rating': 2, 'Price': 16.85, 'Availability': 'in stock'}, {'Title': 'Little Red', 'Rating': 3, 'Price': 13.47, 'Availability': 'in stock'}, {'Title': 'Library of Souls (Miss Peregrine’s Peculiar Children #3)', 'Rating': 5, 'Price': 48.56, 'Availability': 'in stock'}, {'Title': 'Large Print Heart of the Pride', 'Rating': 2, 'Price': 19.15, 'Availability': 'in stock'}, {'Title': 'Hollow City (Miss Peregrine’s Peculiar Children #2)', 'Rating': 1, 'Price': 42.98, 'Availability': 'in stock'}, {'Title': 'Grumbles', 'Rating': 2, 'Price': 22.16, 'Availability': 'in stock'}, {'Title': 'Full Moon over Noah’s Ark: An Odyssey to Mount Ararat and Beyond', 'Rating': 4, 'Price': 49.43, 'Availability': 'in stock'}, {'Title': 'Frostbite (Vampire Academy #2)', 'Rating': 5, 'Price': 29.99, 'Availability': 'in stock'}, {'Title': 'Follow You Home', 'Rating': 1, 'Price': 21.36, 'Availability': 'in stock'}, {'Title': 'First Steps for New Christians (Print Edition)', 'Rating': 1, 'Price': 29.0, 'Availability': 'in stock'}, {'Title': 'Fables, Vol. 1: Legends in Exile (Fables #1)', 'Rating': 4, 'Price': 41.62, 'Availability': 'in stock'}, {'Title': 'Drive: The Surprising Truth About What Motivates Us', 'Rating': 4, 'Price': 34.95, 'Availability': 'in stock'}, {'Title': 'Done Rubbed Out (Reightman & Bailey #1)', 'Rating': 5, 'Price': 37.72, 'Availability': 'in stock'}, {'Title': 'Doing It Over (Most Likely To #1)', 'Rating': 3, 'Price': 35.61, 'Availability': 'in stock'}, {'Title': 'Deliciously Ella Every Day: Quick and Easy Recipes for Gluten-Free Snacks, Packed Lunches, and Simple Meals', 'Rating': 3, 'Price': 42.16, 'Availability': 'in stock'}]
+2023-09-18 04:50:29,608 DEBUG   :Sorted data in print_price_array
+2023-09-18 04:50:29,608 DEBUG   :Results for request for print_price() have been printed [{'Title': 'Full Moon over Noah’s Ark: An Odyssey to Mount Ararat and Beyond', 'Rating': 4, 'Price': 49.43, 'Availability': 'in stock'}, {'Title': 'Library of Souls (Miss Peregrine’s Peculiar Children #3)', 'Rating': 5, 'Price': 48.56, 'Availability': 'in stock'}, {'Title': 'Hollow City (Miss Peregrine’s Peculiar Children #2)', 'Rating': 1, 'Price': 42.98, 'Availability': 'in stock'}, {'Title': 'Deliciously Ella Every Day: Quick and Easy Recipes for Gluten-Free Snacks, Packed Lunches, and Simple Meals', 'Rating': 3, 'Price': 42.16, 'Availability': 'in stock'}, {'Title': 'Fables, Vol. 1: Legends in Exile (Fables #1)', 'Rating': 4, 'Price': 41.62, 'Availability': 'in stock'}, {'Title': 'Done Rubbed Out (Reightman & Bailey #1)', 'Rating': 5, 'Price': 37.72, 'Availability': 'in stock'}, {'Title': 'Doing It Over (Most Likely To #1)', 'Rating': 3, 'Price': 35.61, 'Availability': 'in stock'}, {'Title': 'Drive: The Surprising Truth About What Motivates Us', 'Rating': 4, 'Price': 34.95, 'Availability': 'in stock'}, {'Title': 'Frostbite (Vampire Academy #2)', 'Rating': 5, 'Price': 29.99, 'Availability': 'in stock'}, {'Title': 'First Steps for New Christians (Print Edition)', 'Rating': 1, 'Price': 29.0, 'Availability': 'in stock'}]
+2023-09-18 04:50:33,914 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
+2023-09-18 04:50:34,005 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-10.html HTTP/1.1" 200 51145
+2023-09-18 04:50:38,328 DEBUG   :User quit session.
+2023-09-18 04:52:35,644 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
+2023-09-18 04:52:35,739 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-10.html HTTP/1.1" 200 51145
+2023-09-18 04:52:37,724 DEBUG   :User entered 'a' and called print_all_books().
+2023-09-18 04:52:37,724 INFO    :Data in print_all_books() have been printed.
+2023-09-18 04:54:50,619 DEBUG   :User quit session.
+2023-09-18 04:55:04,981 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
+2023-09-18 04:55:05,077 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-10.html HTTP/1.1" 200 51145
+2023-09-18 04:55:07,348 INFO    :User entered 'a' and called print_all_books().
+2023-09-18 04:55:07,349 INFO    :Data in print_all_books() have been printed.
+2023-09-18 04:55:21,560 INFO    :User quit session.
+2023-09-18 04:55:31,535 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
+2023-09-18 04:55:31,638 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-1.html HTTP/1.1" 200 50469
+2023-09-18 04:55:34,510 INFO    :User entered 'a' and called print_all_books().
+2023-09-18 04:55:34,511 INFO    :Data in print_all_books() have been printed.
+2023-09-18 04:55:37,352 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
+2023-09-18 04:55:37,443 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-10.html HTTP/1.1" 200 51145
+2023-09-18 04:55:39,040 INFO    :User entered 'b' and called print_best_price().
+2023-09-18 04:55:41,504 INFO    :Added data to print_best_books_array. []
+2023-09-18 04:55:41,504 INFO    :Results from request for best books have been printed. [{'Title': 'Modern Romance', 'Rating': 5, 'Price': 28.26, 'Availability': 'in stock'}, {'Title': 'Library of Souls (Miss Peregrine’s Peculiar Children #3)', 'Rating': 5, 'Price': 48.56, 'Availability': 'in stock'}, {'Title': 'Frostbite (Vampire Academy #2)', 'Rating': 5, 'Price': 29.99, 'Availability': 'in stock'}, {'Title': 'Finders Keepers (Bill Hodges Trilogy #2)', 'Rating': 5, 'Price': 53.53, 'Availability': 'in stock'}, {'Title': 'Done Rubbed Out (Reightman & Bailey #1)', 'Rating': 5, 'Price': 37.72, 'Availability': 'in stock'}]
+2023-09-18 04:55:46,312 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
+2023-09-18 04:55:46,402 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-10.html HTTP/1.1" 200 51145
+2023-09-18 04:55:48,813 INFO    :User entered 'b' and called print_best_price().
+2023-09-18 04:55:49,804 INFO    :Added data to print_best_books_array. []
+2023-09-18 04:55:49,805 INFO    :Results from request for best books have been printed. [{'Title': 'Little Red', 'Rating': 3, 'Price': 13.47, 'Availability': 'in stock'}, {'Title': 'Doing It Over (Most Likely To #1)', 'Rating': 3, 'Price': 35.61, 'Availability': 'in stock'}, {'Title': 'Deliciously Ella Every Day: Quick and Easy Recipes for Gluten-Free Snacks, Packed Lunches, and Simple Meals', 'Rating': 3, 'Price': 42.16, 'Availability': 'in stock'}]
+2023-09-18 04:55:51,892 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
+2023-09-18 04:55:51,986 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-10.html HTTP/1.1" 200 51145
+2023-09-18 04:55:55,139 INFO    :User entered 'p' and called print_price().
+2023-09-18 04:55:56,605 INFO    :Added data to print_price_array. [{'Title': 'Miss Peregrine’s Home for Peculiar Children (Miss Peregrine’s Peculiar Children #1)', 'Rating': 1, 'Price': 10.76, 'Availability': 'in stock'}, {'Title': 'Louisa: The Extraordinary Life of Mrs. Adams', 'Rating': 2, 'Price': 16.85, 'Availability': 'in stock'}, {'Title': 'Little Red', 'Rating': 3, 'Price': 13.47, 'Availability': 'in stock'}, {'Title': 'Large Print Heart of the Pride', 'Rating': 2, 'Price': 19.15, 'Availability': 'in stock'}]
+2023-09-18 04:55:56,605 INFO    :Sorted data in print_price_array
+2023-09-18 04:55:56,605 INFO    :Results for request for print_price() have been printed [{'Title': 'Large Print Heart of the Pride', 'Rating': 2, 'Price': 19.15, 'Availability': 'in stock'}, {'Title': 'Louisa: The Extraordinary Life of Mrs. Adams', 'Rating': 2, 'Price': 16.85, 'Availability': 'in stock'}, {'Title': 'Little Red', 'Rating': 3, 'Price': 13.47, 'Availability': 'in stock'}, {'Title': 'Miss Peregrine’s Home for Peculiar Children (Miss Peregrine’s Peculiar Children #1)', 'Rating': 1, 'Price': 10.76, 'Availability': 'in stock'}]
+2023-09-18 04:55:59,433 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
+2023-09-18 04:55:59,529 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-10.html HTTP/1.1" 200 51145
+2023-09-18 04:56:06,031 INFO    :User quit session.
