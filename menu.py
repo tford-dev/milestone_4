@@ -15,9 +15,13 @@ Enter:
 - 'q' or any other key to quit entire process
 Your choice: """
 def print_all_books():
-    for book in page_array:
-        print(book);
-    logging.info("Data in print_all_books() have been printed.")
+    if len(page_array) > 0:
+        for book in page_array:
+            print(book);
+        logging.info("Data in print_all_books() have been printed.")
+    else: 
+        print("There is no data for your query, adjust page number.")
+        logging.debug("page_array is empty, no dat to output to user. Bad query.")
 
 
 def print_best_books():

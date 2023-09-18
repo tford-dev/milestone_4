@@ -48,3 +48,26 @@
 2023-09-18 04:55:59,433 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
 2023-09-18 04:55:59,529 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-10.html HTTP/1.1" 200 51145
 2023-09-18 04:56:06,031 INFO    :User quit session.
+2023-09-18 04:59:10,053 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
+2023-09-18 04:59:10,182 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-51.html HTTP/1.1" 404 153
+2023-09-18 04:59:10,190 DEBUG   :Encoding detection: ascii is most likely the one.
+2023-09-18 04:59:11,503 INFO    :User entered 'a' and called print_all_books().
+2023-09-18 04:59:11,503 INFO    :Data in print_all_books() have been printed.
+2023-09-18 05:00:54,242 WARNING :Invalid input from user in menu() function.
+2023-09-18 05:00:56,477 INFO    :User quit session.
+2023-09-18 05:01:03,733 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
+2023-09-18 05:01:03,822 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-51.html HTTP/1.1" 404 153
+2023-09-18 05:01:03,826 DEBUG   :Encoding detection: ascii is most likely the one.
+2023-09-18 05:01:04,976 INFO    :User entered 'a' and called print_all_books().
+2023-09-18 05:01:04,976 DEBUG   :page_array is empty, no dat to output to user. Bad query.
+2023-09-18 05:01:11,412 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
+2023-09-18 05:01:11,504 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-50.html HTTP/1.1" 200 50427
+2023-09-18 05:01:12,930 INFO    :User entered 'a' and called print_all_books().
+2023-09-18 05:01:12,930 INFO    :Data in print_all_books() have been printed.
+2023-09-18 05:01:15,563 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
+2023-09-18 05:01:15,652 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-50.html HTTP/1.1" 200 50427
+2023-09-18 05:01:19,144 INFO    :User entered 'p' and called print_price().
+2023-09-18 05:01:21,106 INFO    :Added data to print_price_array. [{'Title': 'Charlie and the Chocolate Factory (Charlie Bucket #1)', 'Rating': 3, 'Price': 22.85, 'Availability': 'in stock'}, {'Title': 'Blood Defense (Samantha Brinkman #1)', 'Rating': 3, 'Price': 20.3, 'Availability': 'in stock'}, {'Title': "A Spy's Devotion (The Regency Spies of London #1)", 'Rating': 5, 'Price': 16.97, 'Availability': 'in stock'}]
+2023-09-18 05:01:21,106 INFO    :Sorted data in print_price_array
+2023-09-18 05:01:21,106 INFO    :Results for request for print_price() have been printed [{'Title': 'Charlie and the Chocolate Factory (Charlie Bucket #1)', 'Rating': 3, 'Price': 22.85, 'Availability': 'in stock'}, {'Title': 'Blood Defense (Samantha Brinkman #1)', 'Rating': 3, 'Price': 20.3, 'Availability': 'in stock'}, {'Title': "A Spy's Devotion (The Regency Spies of London #1)", 'Rating': 5, 'Price': 16.97, 'Availability': 'in stock'}]
+2023-09-18 05:01:24,405 INFO    :User quit session.
