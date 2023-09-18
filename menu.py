@@ -21,7 +21,7 @@ def print_all_books():
         logging.info("Data in print_all_books() have been printed.")
     else: 
         print("There is no data for your query, adjust page number.")
-        logging.debug("page_array is empty, no dat to output to user. Bad query.")
+        logging.debug("page_array is empty, no data to output to user. Bad query.")
 
 
 def print_best_books():
@@ -33,7 +33,7 @@ def print_best_books():
         try:
             rating = float(rating_input)
             print_best_books_array = [];
-            logging.info(f"Added data to print_best_books_array. {print_best_books_array}")
+            logging.info(f"Added data to print_best_books_array[]. {print_best_books_array}")
             for book in page_array:
                 if rating == book['Rating']:
                     print_best_books_array.append(book);
@@ -61,9 +61,9 @@ def print_price():
                 float_price = float(book['Price']);
                 if (float_price <= float(price)):
                     print_price_array.append(book);
-            logging.info(f"Added data to print_price_array. {print_price_array}")
+            logging.info(f"Added data to print_price_array[]. {print_price_array}")
             print_price_array_sorted = sorted(print_price_array, key=lambda x: x['Price'] * -1)[:10];
-            logging.info(f"Sorted data in print_price_array")
+            logging.info(f"Sorted data in print_price_array[]")
             if len(print_price_array) > 0:
                 for book in print_price_array_sorted:
                     print(f"{book['Title']} is close to your desired price of £{float(price)}, this book costs £{book['Price']}.");
