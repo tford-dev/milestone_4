@@ -1,9 +1,28 @@
-import requests;
-import re;
+import requests
+import re
+import aiohttp
+import async_timeout
+import asyncio
+import time
 
 from pages.books_page import BooksPage;
 
 page_array = [];
+
+async def fetch_page(session, url):
+    page_start = time.time()
+    async with async_timeout.timeout(10):
+        async with session.get(url) as response:
+            print(f"Page took {time.time() - page_start} to finish.")
+            return response.status
+        
+async def get_multiple_pages(loop, *urls):
+    tasks = []
+    async with aiohttp.ClientSession(loop=loop) as session:
+        for url in urls:
+            tasks.append(fetch_page(session, url))
+        grouped_tasks = asyncio.gather(*tasks)
+        return await grouped_tasks
 
 def page_prompt():
     while True:
@@ -32,12 +51,3 @@ def page_prompt():
             break;
         except ValueError:
             print("Please enter a number for desired page or press enter in order for input to be valid.")
-            
-#def print_output():
-    # page_content = requests.get("https://books.toscrape.com/").content;
-    # page = BooksPage(page_content)
-
-    # for book in page.books:
-    #     print(book)
-
-#print_output();
