@@ -1,4 +1,4 @@
-2023-09-18 04:50:05,271 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
+ 2023-09-18 04:50:05,271 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
 2023-09-18 04:50:05,407 DEBUG   :https://books.toscrape.com:443 "GET /catalogue/page-2.html HTTP/1.1" 200 50877
 2023-09-18 04:50:08,720 DEBUG   :User entered 'a' and called print_all_books().
 2023-09-18 04:50:12,233 DEBUG   :Starting new HTTPS connection (1): books.toscrape.com:443
